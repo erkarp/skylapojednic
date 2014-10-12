@@ -1,0 +1,241 @@
+body {
+	font-family:  arial,'Cabin',serif;
+}
+p {
+	font-size: 13px; 
+	margin: 5px 5px 15px 5px;
+	font-family: 'Cabin', arial, serif;
+}
+h1 { 
+	margin: 0; 
+	color: #0A154D; 
+	font-family: "Book Antiqua", Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	text-align: right; 
+	font-weight: 200; 
+	font-size: 24px; 
+	text-shadow: -1px -1px 0px #DFDFDF, 1px 1px 0px #CFCFCF; 
+}
+h2 { 
+	font-size: 18px; 
+	font-weight: 400;
+	text-align: center; 
+	text-decoration: underline; 
+	font-family: "Helvetica Neue";
+	margin: 6px 0 16px 0; 
+	padding: 0; 
+	cursor: default; 
+}
+h3 {
+	padding-bottom: 10px;
+	font-size: 15px; 
+	font-weight: bold;
+	text-align: center;
+}
+h6 { /* ON SWITCH: change this css to h4 and change h6 to h4 in CV.html */
+	padding-top: 15px;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0;
+}
+h5 { 
+	font-size: 12px; 
+	font-weight: bold;
+	text-align: center;
+	margin: -31px 0 0 0; 
+}
+a:link {
+	text-decoration:none;
+	font-size:inherit;
+	font-weight:inherit;
+	color:black;
+}
+.wrapper { 
+	margin: auto; 
+	max-width: 875px; 
+} 
+header { 
+	width: 100%;
+	max-width: 160px; 
+	display: inline-block;
+	margin: 1em 0 1em 0;
+	padding: 20px 20px 0 0; 
+	float: left; 
+}
+nav { 
+	width: 120px; 
+	float: right; 
+}
+.main { 
+	display: inline-block; 
+	width: 60%; 
+	max-width: none; 
+	padding: 10px 30px; 
+	border: 1px dotted gray; 
+	border-radius: 10px; 
+	margin: 38px 0 0 15px; 
+}
+.main > img { 
+	max-width: 100%; 
+	margin: 0 auto; 
+	overflow: hidden; 
+	display: block; 
+}
+.main > img:last-child {
+	margin-bottom: 25px;
+}
+.main > p {
+	font-size: 12px;
+	margin: 2px 0 10px 0;
+	text-align: center;
+}
+.main ul { 
+	display: inline-block; 
+	padding: 0;
+	width: 50%;
+	float: left;
+}
+.main li { 
+	display: inline-block;
+	text-align: center;
+	width: 32%;
+	line-height: 26px;
+	font-size: 14px;
+	font-weight: bold;
+}
+.thumbs > img { 
+	height: 50px; 
+	width: 50px; 
+	margin: 4px; 
+	overflow: hidden; 
+	display: inline-block; 
+	border: 1px solid black; 
+	box-shadow: none;
+	cursor: pointer; 
+}
+.activeThumb {
+	border: 1px solid gray !important; 
+	box-shadow: 0 0 10px 2px gray !important;
+}
+ul { 
+	display: block;
+	list-style: none; 
+	font-size: 14px; 
+	text-align: right; 
+	float: right; 
+}
+nav > ul, nav > ul > li { margin: 20px 0; }
+nav > ul > li:hover { cursor: pointer; }
+ul ul { 
+	display: none; 
+	margin-bottom: 10px; 
+	white-space: nowrap }
+ul ul li { font-size: 12px; }
+ul ul ul { padding: 0; margin: 0; }
+ul ul li a:hover,
+nav > :last-child > :last-child :hover { color: red; }
+#navigation { display: none; }
+
+
+				/*	MAIN GALLERY	*/
+#flip * { font-size: 15px; cursor: pointer; }
+#flip { display: inline-block; width: 100%; }
+#flip :first-child { float: left; }
+#flip :last-child { float: right; }
+b { font-weight: bold; }
+i { font-style: italic; }
+#about-pic { float: left; padding: 0 20px 20px 0; }
+#email { padding: 10px 0; }
+.underline { text-decoration: underline; margin-bottom: 3px; }
+
+/* Wanderer Sessions */
+section { padding-bottom: 30px; }
+a.top { float: right; font-style: italic; text-decoration: underline; }
+
+
+				/*	FOOTER	*/
+footer {
+	color: gray;
+	text-align: center;
+	padding: 30px 0 15px 0; 
+	text-transform: uppercase;
+}
+#copyright {
+	display: inline-block;
+	border-top: 1px dotted gray;
+	border-bottom: 1px dotted gray;
+	padding: 10px 0 10px 0;
+}
+footer p { 
+	font-size: 10px;
+	margin-bottom: 5px;
+}
+footer a {
+	color: inherit;
+}
+
+
+
+
+@media (max-width: 1000px) {
+	header { padding-right: 5px; }
+	.main ul { width: 100%; }
+}
+@media (max-width: 640px) {
+	h1 { text-align: center; margin: 10px; }
+	h1 a { border-bottom: none; }
+	.wrapper { width: 70%; }
+	header, .main { margin: 10px 0; }	
+	.main { 
+		display: block; 
+		width: auto; 
+	}		
+	header { 
+		max-width: 100%; 
+		float: none; 
+	}
+	nav { 
+		width: 100%;
+		margin: 10px 0;
+		border: 1px dotted gray; 
+		border-radius: 10px; 
+		overflow: hidden;
+	}
+	nav ul { 
+		display: none;
+		width: 100%;
+		margin: 0;
+		text-align: center; 
+	}
+	nav > ul > li {
+		font-size: 20px; 
+		margin: 0 0 20px;
+	}
+	nav > ul > ul {
+		margin-bottom: 20px;
+	}
+	nav ul ul li {
+		font-size: 16px;
+		margin: 16px 0;
+	}
+	#navigation { 
+		display: block; 
+		width: 100%;
+		font-size: 20px;
+		margin: 20px 0;
+		text-align: center; 
+		text-transform: uppercase;
+	}
+	#navigation:active {
+		text-shadow: 4px 4px 2px #969696); 
+	}
+	#about-pic { float: none; padding: 0; }
+}	
+@media (max-width: 480px) {
+	header { margin: 0; }
+	.main li { 
+		display: block; 
+		width: auto; 
+		margin: auto; 
+		line-height: 40px; 
+	}
+}
